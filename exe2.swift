@@ -1,17 +1,17 @@
 class Cercle {
 var centre:Centre
-var rayon:Int
-init(centre:Centre,rayon:Int){
+var rayon:Double
+init(centre:Centre,rayon:Double){
     self.centre=centre
     self.rayon=rayon
 }
-func perimetre()->Int{
+func perimetre()->Double{
     
-    return 2*Int.pi*rayon
+    return 2*Double.pi*rayon
 }
-func surface()->Int{
+func surface()->Double{
  
-    return rayon*rayon*Int.pi
+    return rayon*rayon*Double.pi
 }
 
     

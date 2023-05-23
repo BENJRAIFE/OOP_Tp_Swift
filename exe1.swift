@@ -1,14 +1,13 @@
-import UIKit
+import Foundation
 class Racine {
-    var x:Int
-    init(x:Int){
+    var x:Double
+    init(x:Double){
         self.x=x
     }
-    func racineCarre(x:Int) {
-        let carre = sqrt(x)
-        print("le racine carre de \(x) est : \(carre)")
+    func racineCarre()->Double{
+        return sqrt(x)
     }
     
 }
-var rac=Racine(9)
+var rac=Racine(x:9)
 print(rac.racineCarre())
